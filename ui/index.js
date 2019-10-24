@@ -5,6 +5,6 @@
 
 module.exports = (api, options) => {
   if (options['ui-framework'] === 'element-ui') {
-    require('./element.js')(api, options)
+    require('./element')(api, options)
   }
 }

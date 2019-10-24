@@ -7,7 +7,7 @@ import { throwHttpError } from '@/utils/util'
 import { getAccessToken } from '@/utils/storage'
 
 Axios.defaults.timeout = 30 * 1000
-Axios.defaults.baseURL = process.env.VUE_APP_BASE_URL
+Axios.defaults.baseURL = process.env.VUE_APP_API_BASE_URL
 
 Axios.interceptors.request.use(
   config => {

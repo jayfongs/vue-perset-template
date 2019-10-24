@@ -29,6 +29,20 @@ module.exports = (api, options, rootOptions) => {
     }
   })
 
+  if (options.application === 'mobile') {
+    api.extendPackage({
+      dependencies: {
+        'lib-flexible': '^0.3.2'
+      },
+
+      devDependencies: {
+        vconsole: '^3.3.4'
+      }
+    })
+
+    api.render('../plugins')
+  }
+
   getUiFramework(api, options)
 
   api.render('./template')

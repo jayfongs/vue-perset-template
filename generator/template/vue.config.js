@@ -20,8 +20,9 @@ function hasElementVariables() {
 
 module.exports = {
   assetsDir: 'static',
-  productionSourceMap:
-    process.env.PRODUCTION_SOURCE_MAP === 'true' ? true : false,
+  productionSourceMap: process.env.PRODUCTION_SOURCE_MAP === 'true',
+  publicPath:
+    process.env.NODE_ENV === 'development' ? '/' : process.env.PUBLIC_PATH,
 
   devServer: {
     port: 9527,

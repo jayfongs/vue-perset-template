@@ -1,10 +1,15 @@
 NODE_ENV = development
-VUE_APP_BASE_URL = ''
+# api base url
+VUE_APP_API_BASE_URL = ''
 # 登录用户名
 VUE_APP_USERNAME = ''
 # 登录密码
 VUE_APP_PASSWORD = ''
-# vuex debug
-VUE_APP_VUEX_DEBUG = true
+<%_ if (options.application === 'mobile') { _%>
+# 是否启用 vconsole
+VUE_APP_VCONSOLE = true
+<%_ } _%>
+# 是否启用 vuex logger debug
+VUE_APP_VUEX_LOGGER = true
 # vue 路由模式
 VUE_APP_ROUTER_MODE = 'history'

@@ -12,7 +12,7 @@ import * as actions from './actions'
 
 Vue.use(Vuex)
 
-const debug = process.env.VUE_APP_NODE_ENV !== 'production'
+const debug = process.env.VUE_APP_VUEX_LOGGER === 'true'
 
 export default new Vuex.Store({
   state,

@@ -5,9 +5,26 @@
 
 module.exports = [
   {
+    name: 'application',
+    type: 'list',
+    message: 'Choose whether application type is PC or mobile (default：PC)',
+    choices: [
+      {
+        name: 'PC',
+        value: 'pc'
+      },
+      {
+        name: 'Mobile',
+        value: 'mobile'
+      }
+    ],
+    default: 'pc'
+  },
+
+  {
     name: 'ui-framework',
     type: 'list',
-    message: 'choice UI Framework(default:none)',
+    message: 'choice UI Framework (default: none)',
     choices: [
       {
         name: 'Element UI',
@@ -18,7 +35,7 @@ module.exports = [
         value: 'none'
       }
     ],
-
+    when: answers => answers.application === 'pc',
     default: 'none'
   }
 ]
