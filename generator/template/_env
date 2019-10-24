@@ -1,3 +1,5 @@
+# 标题
+VUE_APP_TITLE = <%= rootOptions.projectName %>
 # 发版时间
 VUE_APP_RELEASE_TIME = ''
 # 版本号

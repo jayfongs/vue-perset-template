@@ -7,6 +7,14 @@ const getUiFramework = require('../ui/index')
 
 module.exports = (api, options, rootOptions) => {
   api.extendPackage({
+    scripts: {
+      serve: 'vue-cli-service serve',
+      'build:staging': 'vue-cli-service build --mode staging --modern',
+      'build:prod': 'vue-cli-service build --modern'
+    }
+  })
+
+  api.extendPackage({
     dependencies: {
       axios: '^0.19.0',
       lodash: '^4.17.15',
@@ -22,5 +30,6 @@ module.exports = (api, options, rootOptions) => {
   })
 
   getUiFramework(api, options)
+
   api.render('./template')
 }
