@@ -1,0 +1,8 @@
+# 发版时间
+VUE_APP_RELEASE_TIME = ''
+# 版本号
+VUE_APP_VERSION = ''
+# production 生产环境的 source map
+PRODUCTION_SOURCE_MAP = true
+# vue 路由模式
+VUE_APP_ROUTER_MODE = 'hash'

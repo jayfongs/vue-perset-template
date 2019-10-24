@@ -1,0 +1,25 @@
+// 清除浮动
+@mixin clearfix {
+  &:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+}
+
+// 溢出隐藏
+@mixin overflow-hiding {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+// 多行溢出隐藏
+@mixin overflow-hiding-more($line: 2) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: $line;
+  -moz-box-orient: vertical;
+  -webkit-box-orient: vertical;
+}
