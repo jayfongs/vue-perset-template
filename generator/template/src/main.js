@@ -9,7 +9,7 @@ import App from './App.vue'
 
 // css
 import 'normalize.css'
-import '@/assets/scss/common.scss'
+import '@/assets/scss/index.scss'
 
 // plugins
 <%_ if (options.application === 'mobile') { _%>

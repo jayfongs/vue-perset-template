@@ -12,10 +12,8 @@ module.exports = (api, options, rootOptions) => {
       plop: 'plop',
       'build:staging': 'vue-cli-service build --mode staging --modern',
       'build:prod': 'vue-cli-service build --modern'
-    }
-  })
+    },
 
-  api.extendPackage({
     dependencies: {
       axios: '^0.19.0',
       lodash: '^4.17.15',

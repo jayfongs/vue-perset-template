@@ -1,6 +1,6 @@
-# Vue Perset Template
+# vue-preset-template
 
-> 基于 vue cli3 perset 搭建的项目模板
+> 基于 vue-cli3 perset 搭建的项目模板
 
 ## 安装
 
