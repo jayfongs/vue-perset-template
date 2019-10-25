@@ -9,6 +9,7 @@ module.exports = (api, options, rootOptions) => {
   api.extendPackage({
     scripts: {
       serve: 'vue-cli-service serve',
+      plop: 'plop',
       'build:staging': 'vue-cli-service build --mode staging --modern',
       'build:prod': 'vue-cli-service build --modern'
     }

@@ -1,0 +1,27 @@
+{{#if template}}
+<template>
+  <section class="{{ dashCase name }}"></section>
+</template>
+{{/if}}
+
+{{#if script}}
+<script>
+  export default {
+    name: 'Ctc{{ properCase name }}',
+
+    props: {},
+
+    data() {
+      return {}
+    },
+
+    created() { },
+
+    methods: {}
+  }
+</script>
+{{/if}}
+
+{{#if style}}
+<style lang="scss" scoped></style>
+{{/if}}
