@@ -5,7 +5,9 @@
 ## 安装
 
 ```bash
-vue create --preset direct:https://github.com/jayfongs/vue-perset-template.git --clone project-name
+vue create --preset jayfongs/vue-preset-template project-name
+# or
+vue create --preset direct:https://github.com/jayfongs/vue-preset-template.git --clone project-name
 ```
 
 ## 安装 PWA
