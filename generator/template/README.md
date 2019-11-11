@@ -67,5 +67,6 @@ import '../theme/index.css'
 ├── plugins       # 插件
 ├── router        # 路由
 ├── store         # vuex
-└── utils         # 工具方法
+├── utils         # 工具方法
+└── views         # 页面
 ```
