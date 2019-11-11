@@ -24,6 +24,7 @@ module.exports = (api, options, rootOptions) => {
     },
 
     devDependencies: {
+      plop: '^2.5.3',
       'compression-webpack-plugin': '^3.0.0'
     }
   })
