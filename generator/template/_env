@@ -9,4 +9,4 @@ PUBLIC_PATH = /
 # production 生产环境的 source map
 PRODUCTION_SOURCE_MAP = true
 # vue 路由模式
-VUE_APP_ROUTER_MODE = 'hash'
+VUE_APP_ROUTER_MODE = 'history'

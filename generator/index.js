@@ -17,8 +17,8 @@ module.exports = (api, options, rootOptions) => {
     dependencies: {
       axios: '^0.19.0',
       lodash: '^4.17.15',
-      vuex: '^3.1.1',
-      dayjs: '^1.8.16',
+      vuex: '^3.1.2',
+      dayjs: '^1.8.17',
       'normalize.css': '^8.0.1',
       'vue-router': '^3.1.3'
     },
@@ -36,7 +36,8 @@ module.exports = (api, options, rootOptions) => {
       },
 
       devDependencies: {
-        vconsole: '^3.3.4'
+        vconsole: '^3.3.4',
+        'postcss-pxtorem': '^4.0.1'
       }
     })
 

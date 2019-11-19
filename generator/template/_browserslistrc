@@ -1,0 +1,7 @@
+<%_ if (options.application === 'mobile') { _%>
+Android >= 4.0
+iOS >= 7
+<%_ } else { _%>
+> 1%
+last 2 versions
+<%_ } _%>

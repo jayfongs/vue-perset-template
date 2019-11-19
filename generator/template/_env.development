@@ -11,5 +11,3 @@ VUE_APP_VCONSOLE = true
 <%_ } _%>
 # 是否启用 vuex logger debug
 VUE_APP_VUEX_LOGGER = true
-# vue 路由模式
-VUE_APP_ROUTER_MODE = 'history'
