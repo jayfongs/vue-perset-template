@@ -1,0 +1,4 @@
+<%_ if (options.application === 'mobile') { _%>
+# 是否启用 vconsole
+VUE_APP_VCONSOLE = true
+<%_ } _%>

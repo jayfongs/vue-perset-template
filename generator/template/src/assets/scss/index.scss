@@ -1,4 +1,5 @@
 @import './reset';
+@import './transition';
 
 <%_ if (options['ui-framework']==='element-ui') {
   _%>@import './element-ui';
