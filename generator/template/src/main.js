@@ -14,12 +14,12 @@ import '@/assets/scss/index.scss'
 // plugins
 <%_ if (options.application === 'mobile') { _%>
 import 'lib-flexible'
+import './plugins/fastclick'
 import './plugins/vconsole'
 <%_ } _%>
 <%_ if (options['ui-framework'] === 'element-ui') { _%>
 import './plugins/element-ui'
 <%_ } _%>
-
 
 Vue.config.productionTip = false
 

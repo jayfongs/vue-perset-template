@@ -32,6 +32,7 @@ module.exports = (api, options, rootOptions) => {
   if (options.application === 'mobile') {
     api.extendPackage({
       dependencies: {
+        fastclick: '^1.0.6',
         'lib-flexible': '^0.3.2'
       },
 
@@ -41,7 +42,10 @@ module.exports = (api, options, rootOptions) => {
       }
     })
 
-    api.render('../plugins')
+    const plugins = ['../plugins/vconsole', '../plugins/fastclick']
+    plugins.forEach(item => {
+      api.render(item)
+    })
   }
 
   getUiFramework(api, options)
