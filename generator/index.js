@@ -10,8 +10,10 @@ module.exports = (api, options, rootOptions) => {
     scripts: {
       serve: 'vue-cli-service serve',
       plop: 'plop',
+      fix: "eslint --fix --ext .js,.vue src",
+      clean: "yarn cache clean",
       'build:staging': 'vue-cli-service build --mode staging --modern',
-      'build:prod': 'vue-cli-service build --modern'
+      'build:prod': 'vue-cli-service build --modern',
     },
 
     dependencies: {
