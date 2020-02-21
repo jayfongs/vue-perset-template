@@ -4,9 +4,10 @@ VUE_APP_TITLE = <%= rootOptions.projectName %>
 VUE_APP_RELEASE_TIME = ''
 # 版本号
 VUE_APP_VERSION = ''
-# 部署应用打包路径（ development 环境无效）
+# vue 路由模式
+VUE_APP_ROUTER_MODE = history
+
+# 部署应用打包路径（development 环境无效）
 PUBLIC_PATH = /
 # production 生产环境的 source map
 PRODUCTION_SOURCE_MAP = false
-# vue 路由模式
-VUE_APP_ROUTER_MODE = history

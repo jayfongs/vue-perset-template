@@ -6,6 +6,7 @@ const fs = require('fs')
 const dayjs = require('dayjs')
 const CompressionWebpackPlugin = require('compression-webpack-plugin')
 const { version } = require('./package.json')
+const isDevelopment = process.env.NODE_ENV === 'development'
 
 function hasElementVariables() {
   let importPath = ''
@@ -20,9 +21,8 @@ function hasElementVariables() {
 
 module.exports = {
   assetsDir: 'static',
+  publicPath: isDevelopment ? '/' : process.env.PUBLIC_PATH,
   productionSourceMap: process.env.PRODUCTION_SOURCE_MAP === 'true',
-  publicPath:
-    process.env.NODE_ENV === 'development' ? '/' : process.env.PUBLIC_PATH,
 
   devServer: {
     port: 9527,
@@ -30,7 +30,7 @@ module.exports = {
   },
 
   configureWebpack: config => {
-    if (process.env.NODE_ENV !== 'development') {
+    if (!isDevelopment) {
       // 开启 Gzip 压缩
       config.plugins.push(
         new CompressionWebpackPlugin({
@@ -47,11 +47,6 @@ module.exports = {
     process.env.VUE_APP_RELEASE_TIME = dayjs().format('YYYY-MM-DD HH:mm:ss')
     // 设置版本号
     process.env.VUE_APP_VERSION = `v${version}`
-  },
-
-  chainWebpack: config => {
-    // 修复HMR
-    config.resolve.symlinks(true)
   },
 
   css: {
