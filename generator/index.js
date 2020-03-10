@@ -12,8 +12,9 @@ module.exports = (api, options, rootOptions) => {
       plop: 'plop',
       fix: "eslint --fix --ext .js,.vue src",
       clean: "yarn cache clean",
-      'build:staging': 'vue-cli-service build --mode staging --modern',
+      'build:stage': 'vue-cli-service build --mode staging --modern',
       'build:prod': 'vue-cli-service build --modern',
+      "report": "vue-cli-service build --report",
     },
 
     dependencies: {

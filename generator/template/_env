@@ -8,6 +8,17 @@ VUE_APP_VERSION = ''
 VUE_APP_ROUTER_MODE = history
 
 # 部署应用打包路径（development 环境无效）
-PUBLIC_PATH = /
+PUBLIC_PATH = ./
+# 生产环境构建文件的目录
+OUTPUT_DIR = dist
+# 放置生成的静态资源 (js、css、img、fonts)
+ASSETS_DIR = static
 # production 生产环境的 source map
 PRODUCTION_SOURCE_MAP = false
+# 是否开启gzip打包压缩（production环境下生效）
+GZIP_ON = true
+
+# 开发服务器环境端口号
+DEV_SERVER_PORT = 9527
+# 开发服务器启动后打开浏览器。将其设置true为打开默认浏览器。
+DEV_SERVER_OPEN = false
