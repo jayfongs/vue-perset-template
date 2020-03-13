@@ -21,6 +21,11 @@ import './plugins/vconsole'
 import './plugins/element-ui'
 <%_ } _%>
 
+<%_ if (options.permission) { _%>
+// directives
+import './directives/permission'
+<%_ } _%>
+
 Vue.config.productionTip = false
 
 new Vue({

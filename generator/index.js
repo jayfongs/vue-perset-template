@@ -49,6 +49,14 @@ module.exports = (api, options, rootOptions) => {
     plugins.forEach(item => {
       api.render(item)
     })
+  } else if (options['permission']) {
+    const utils = ['../utils/permission']
+    const directives = ['../directives/permission']
+    const permission = [...utils, ...directives]
+
+    permission.forEach(item => {
+      api.render(item)
+    })
   }
 
   getUiFramework(api, options)

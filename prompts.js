@@ -36,6 +36,14 @@ module.exports = [
       }
     ],
     when: answers => answers.application === 'pc',
-    default: 'none'
+    default: 'element-ui'
+  },
+
+  {
+    name: 'permission',
+    type: 'confirm',
+    message: 'Whether to use permission judgment（Generally used for management）',
+    when: answers => answers['ui-framework'] === 'element-ui',
+    default: false
   }
 ]
