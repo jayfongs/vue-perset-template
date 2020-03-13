@@ -13,12 +13,12 @@ module.exports = (api, options, rootOptions) => {
     },
 
     dependencies: {
-      'element-ui': '^2.12.0'
+      'element-ui': '^2.13.0'
     },
 
     devDependencies: {
       'element-theme': '^2.0.1',
-      'element-theme-chalk': '^2.12.0'
+      'element-theme-chalk': '^2.13.0'
     }
   })
 
