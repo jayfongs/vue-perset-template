@@ -3,27 +3,32 @@
  * 全局公用弹框提示
  */
 
-import { MessageBox } from 'element-ui'
+import { MessageBox, Message } from 'element-ui'
 
 /**
  * 错误提示的弹窗
  * @param { String } message - 提示内容
  */
 export const errorAlert = message => {
-  return MessageBox.alert(message, '错误提示', {
-    type: 'error'
-  })
+  const title = '错误提示'
+  return MessageBox.alert(message, title, { type: 'error' })
 }
 
 /**
  * 确认删除提示的弹窗
+ * @param { String } content - 提示内容
  */
-export const confirmDelete = () => {
-  return MessageBox.confirm(
-    '此操作将永久删除选中的数据, 是否继续？',
-    '温馨提示',
-    {
-      type: 'warning'
-    }
-  )
+export const confirmDelete = content => {
+  const title = '温馨提示'
+  const message = content || '此操作将永久删除选中的数据, 是否继续？'
+  return MessageBox.confirm(message, title, { type: 'warning' })
+}
+
+/**
+ * 消息通知提示
+ * @param { String } message - 消息内容
+ * @param { String } [type=success] - 消息类型（success/warning/info/error）
+ */
+export const notification = (message, type = 'success') => {
+  return Message({ message, type })
 }
