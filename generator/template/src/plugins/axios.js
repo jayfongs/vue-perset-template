@@ -3,7 +3,7 @@
  */
 
 import Axios from 'axios'
-import { throwHttpError } from '@/utils/util'
+import { throwHttpError } from '@/utils'
 import { getAccessToken } from '@/utils/storage'
 
 Axios.defaults.timeout = 30 * 1000
