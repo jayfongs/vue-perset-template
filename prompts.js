@@ -42,7 +42,7 @@ module.exports = [
   {
     name: 'permission',
     type: 'confirm',
-    message: 'Whether to use permission judgment（Generally used for management）',
+    message: 'Use permission judgment（management）',
     when: answers => answers['ui-framework'] === 'element-ui',
     default: false
   }

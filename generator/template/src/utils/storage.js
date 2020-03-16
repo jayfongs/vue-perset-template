@@ -4,7 +4,6 @@
  */
 
 const TITLE = '<%= rootOptions.projectName %>'
-const USER_INFO = `${TITLE}-user-info`
 const AUTH_ACCESS_TOKEN = `${TITLE}-access-token`
 
 /**
@@ -27,26 +26,4 @@ export const setAccessToken = token => {
  */
 export const removeAccessToken = () => {
   localStorage.removeItem(AUTH_ACCESS_TOKEN)
-}
-
-/**
- * 获取用户信息
- */
-export const getUserInfo = () => {
-  return JSON.parse(localStorage.getItem(USER_INFO))
-}
-
-/**
- * 设置用户信息
- * @param { Object } userInfo
- */
-export const setUserInfo = userInfo => {
-  localStorage.setItem(USER_INFO, JSON.stringify(userInfo))
-}
-
-/**
- * 清除用户信息
- */
-export const removeUserInfo = () => {
-  localStorage.removeItem(USER_INFO)
 }

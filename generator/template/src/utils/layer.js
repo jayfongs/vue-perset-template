@@ -27,8 +27,14 @@ export const confirmDelete = content => {
 /**
  * 消息通知提示
  * @param { String } message - 消息内容
- * @param { String } [type=success] - 消息类型（success/warning/info/error）
+ * @param { String | Object } [options=success] - 消息类型（success/warning/info/error）或者 https://element.eleme.io/#/zh-CN/component/message#options
  */
-export const notification = (message, type = 'success') => {
-  return Message({ message, type })
+export const notification = (message, options) => {
+  if (!options) {
+    options = { type: 'success' }
+  } else if (typeof options === 'string') {
+    options = { type: options }
+  }
+
+  return Message({ message, ...options })
 }
