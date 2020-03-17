@@ -10,13 +10,14 @@ yarn
 yarn serve
 
 # 生成模拟正式环境
-yarn build:staging
+yarn build:stage
 
 # 生成正式环境
 yarn build:prod
 
 # 提示和修复文件
 yarn lint
+yarn lint --fix
 
 # 快速创建新的 view 或 component 模板
 yarn plop
